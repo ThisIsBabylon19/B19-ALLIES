@@ -1799,12 +1799,12 @@
 							if(Object.hasOwn(data, "errors")) {
 								status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
 							} else {
-								status.innerHTML = "Oops! There is a technical problem."
+								status.innerHTML = "Oops! There is a technical problem #001."
 							}
 						})
 					}
 				}).catch(error => {
-					status.innerHTML = "Opps! There is a technical problem."
+					status.innerHTML = "Opps! There is a technical problem #002."
 				});
 			}
 			form.addEventListener("submit", handleSubmit)
